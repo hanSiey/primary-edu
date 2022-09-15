@@ -5,7 +5,7 @@
 ' Team Member 3 Details: Surname, Initials (Student #)
 ' Team Member 4 Details:
 ' Practical: Team Project
-' Class name: Learner
+' Class name: Primary School
 ' *****************************************************************
 
 Option Strict On

@@ -97,6 +97,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PrimarySchool.vb" />
     <Compile Include="Teacher.vb" />
   </ItemGroup>
   <ItemGroup>
