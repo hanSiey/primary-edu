@@ -2,7 +2,7 @@
 ' Team Number: 62
 ' Team Member 1 Details: Taumamng H (220102466)
 ' Team Member 2 Details: Surname, Initials (Student #)
-' Team Member 3 Details: Surname, Initials (Student #)
+' Team Member 3 Details: Muchichwa,PR (221133122)
 ' Team Member 4 Details:
 ' Practical: Team Project
 ' Class name: Academic
@@ -27,7 +27,7 @@ Public Class Academic
 
     End Sub
 
-    Private Function PresentDays() As Integer
+    Protected Function PresentDays() As Integer
         Return _SchoolDays - _AbsentDays   ' Number of days present
     End Function
     Public Overridable Function WorkDone() As Double
