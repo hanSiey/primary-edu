@@ -1,7 +1,7 @@
 ﻿' *****************************************************************
 ' Team Number: 62
 ' Team Member 1 Details: Taumamng H (220102466)
-' Team Member 2 Details: Surname, Initials (Student #)
+' Team Member 2 Details: Mbuyisa, N (222052245)
 ' Team Member 3 Details: Muchichwa,PR (221133122)
 ' Team Member 4 Details:
 ' Practical: Team Project
