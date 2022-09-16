@@ -1,13 +1,17 @@
-C:\Users\Patrick\Documents\primary-edu\bin\Debug\Team_62_Millennium_Goals.exe.config
-C:\Users\Patrick\Documents\primary-edu\bin\Debug\Team_62_Millennium_Goals.exe
-C:\Users\Patrick\Documents\primary-edu\bin\Debug\Team_62_Millennium_Goals.pdb
-C:\Users\Patrick\Documents\primary-edu\bin\Debug\Team_62_Millennium_Goals.xml
-C:\Users\Patrick\Documents\primary-edu\obj\Debug\Team_62_Millennium_Goals.vbproj.AssemblyReference.cache
-C:\Users\Patrick\Documents\primary-edu\obj\Debug\Team_62_Millennium_Goals.vbproj.SuggestedBindingRedirects.cache
-C:\Users\Patrick\Documents\primary-edu\obj\Debug\Team_62_Millennium_Goals.frmEducation.resources
-C:\Users\Patrick\Documents\primary-edu\obj\Debug\Team_62_Millennium_Goals.Resources.resources
-C:\Users\Patrick\Documents\primary-edu\obj\Debug\Team_62_Millennium_Goals.vbproj.GenerateResource.cache
-C:\Users\Patrick\Documents\primary-edu\obj\Debug\Team_62_Millennium_Goals.vbproj.CoreCompileInputs.cache
-C:\Users\Patrick\Documents\primary-edu\obj\Debug\Team_62_Millennium_Goals.exe
-C:\Users\Patrick\Documents\primary-edu\obj\Debug\Team_62_Millennium_Goals.xml
-C:\Users\Patrick\Documents\primary-edu\obj\Debug\Team_62_Millennium_Goals.pdb
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\bin\Debug\Team_62_Millennium_Goals.exe.config
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\bin\Debug\Team_62_Millennium_Goals.exe
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\bin\Debug\Team_62_Millennium_Goals.pdb
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\bin\Debug\Team_62_Millennium_Goals.xml
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.10.0.dll
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\bin\Debug\UJGrid.dll
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\obj\Debug\Team_62_Millennium_Goals.vbproj.AssemblyReference.cache
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\obj\Debug\Team_62_Millennium_Goals.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\obj\Debug\Team_62_Millennium_Goals.exe.config
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\obj\Debug\Team_62_Millennium_Goals.frmEducation.resources
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\obj\Debug\Team_62_Millennium_Goals.Resources.resources
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\obj\Debug\Team_62_Millennium_Goals.vbproj.GenerateResource.cache
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\obj\Debug\Team_62_Millennium_Goals.vbproj.CoreCompileInputs.cache
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\obj\Debug\Team_62_Millennium_Goals.vbproj.CopyComplete
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\obj\Debug\Team_62_Millennium_Goals.exe
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\obj\Debug\Team_62_Millennium_Goals.xml
+C:\Users\Patrick\Desktop\Visual Basic projects\Team_62_Millennium_Goals\obj\Debug\Team_62_Millennium_Goals.pdb

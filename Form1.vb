@@ -36,6 +36,13 @@ Public Class frmEducation
 
         ReDim Schools(nSchools, nYears) 'Resize 2d array
 
+        'Resize Grid 
+        grdEducation.Rows = nSchools + 1
+        grdEducation.Cols = nYears + 3
+
+        l1 = grdEducation.Cols - 1
+        l2 = grdEducation.Cols - 2
+
         For s As Integer = 0 To nSchools - 1
             name = InputBox("Enter the name of school " + CStr(s + 1))
             working_hours = CInt(InputBox("Enter the total number of working hours for the teachers in each year"))
@@ -44,25 +51,12 @@ Public Class frmEducation
             For y As Integer = 0 To nYears - 1
                 nLearners = CInt(InputBox("Enter the number of learners in " + name + " during year " + CStr(y + 1), "School")) 'Number of students for each year
                 nTeachers = CInt(InputBox("Enter the number of teachers in " + name + " during year " + CStr(y + 1), "School")) 'Number of teachers for each year
-                Schools(nSchools, nYears) = New PrimarySchool(name, nLearners, nTeachers, working_hours, tasks_to_do)
+                Schools(s, y) = New PrimarySchool(name, nLearners, nTeachers, working_hours, tasks_to_do)
+                OnGrid(s + 1, 0, name)
+                OnGrid(0, y + 1, "Year " + CStr(y + 1))
             Next y
         Next s
 
-        'Resize Grid 
-        grdEducation.Rows = nSchools + 1
-        grdEducation.Cols = nYears + 3
-
-        l1 = grdEducation.Cols - 1
-        l2 = grdEducation.Cols - 2
-
-        'label Grid
-        For r As Integer = 1 To nSchools
-            OnGrid(r, 0, Schools(r, 0).name)
-        Next
-
-        For y As Integer = 1 To nYears
-            OnGrid(0, y, "Year " + CStr(y))
-        Next
 
         OnGrid(0, l1, "Status")
         OnGrid(0, l2, "Avg Pass Rate")
@@ -124,6 +118,38 @@ Public Class frmEducation
         Next s
     End Sub
 
+    Private Sub btnCalcCritical_Click(sender As Object, e As EventArgs) Handles btnCalcCritical.Click
+        Dim status As String
+        Dim TotCritical As Integer = 0
+
+        For s As Integer = 0 To nSchools - 1
+            For y As Integer = 0 To nYears - 1
+                status = Schools(s, y).DetermineStatus(Schools(s, y).CalcAvgPassRate())
+                If status = "Critical" Then
+                    TotCritical += 1
+                End If
+            Next
+        Next
+
+        txtCritical.Text = CStr(TotCritical)
+    End Sub
+
+    Private Sub btnCalcDanger_Click(sender As Object, e As EventArgs) Handles btnCalcDanger.Click
+        Dim status As String
+        Dim TotDanger As Integer = 0
+
+        For s As Integer = 0 To nSchools - 1
+            For y As Integer = 0 To nYears - 1
+                status = Schools(s, y).DetermineStatus(Schools(s, y).CalcAvgPassRate())
+                If status = "Danger Zone" Then
+                    TotDanger += 1
+                End If
+            Next
+        Next
+
+        txtDanger.Text = CStr(TotDanger)
+    End Sub
+
     Private Sub btnStatus_Click(sender As Object, e As EventArgs) Handles btnStatus.Click
         Dim status As String
         For s As Integer = 0 To nSchools - 1
@@ -135,3 +161,4 @@ Public Class frmEducation
     End Sub
 
 End Class
+
