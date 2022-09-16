@@ -112,3 +112,4 @@ Public Class PrimarySchool
         Return (TotalWorkDone / (_TotMember * 100)) * 100
     End Function
 End Class
+

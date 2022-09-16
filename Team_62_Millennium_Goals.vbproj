@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6601A7F6-652E-4D33-9365-A77B11384141}</ProjectGuid>
+    <ProjectGuid>{680D864E-5B2F-4594-9AE1-F39CEF757CC4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <StartupObject>Team_62_Millennium_Goals.My.MyApplication</StartupObject>
     <RootNamespace>Team_62_Millennium_Goals</RootNamespace>
@@ -60,7 +60,7 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
     <Reference Include="UJGrid">
-      <HintPath>..\..\..\..\..\IFM1\UJGrid.dll</HintPath>
+      <HintPath>..\..\UJGrid\UJ Grid\UJGrid.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -103,7 +103,6 @@
     </Compile>
     <Compile Include="PrimarySchool.vb" />
     <Compile Include="Teacher.vb" />
-    <Compile Include="UJGrid\UJGrid.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
