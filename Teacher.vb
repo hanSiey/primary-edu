@@ -17,8 +17,8 @@ Public Class Teacher
 
 
     'Constructor
-    Public Sub New(ByVal name As String, ByVal surname As String, ByVal work As Integer, ByVal absentdays As Integer, ByVal workinghours As Integer, ByVal markingcompleted As Integer, ByVal taskstomark As Integer)
-        MyBase.New(name, surname, work, absentdays)
+    Public Sub New(ByVal name As String, ByVal absentdays As Integer, ByVal workinghours As Integer, ByVal markingcompleted As Integer, ByVal taskstomark As Integer)
+        MyBase.New(name, taskstomark, absentdays)
         _TaskstoMark = taskstomark
         _MarkingCompleted = markingcompleted
         _WorkingHours = workinghours
@@ -34,14 +34,6 @@ Public Class Teacher
         End Set
     End Property
 
-    Public Property Surname() As String
-        Get
-            Return _Surname
-        End Get
-        Set(value As String)
-            _Surname = value
-        End Set
-    End Property
 
     Public Property work() As Integer
         Get

@@ -17,8 +17,8 @@ Public Class Learner
     Private _mark As Integer
     Private _taskscompleted As Integer
 
-    Public Sub New(ByVal name As String, ByVal surname As String, ByVal work As Integer, ByVal absentdays As Integer, ByVal mark As Integer, ByVal taskscompleted As Integer)
-        MyBase.New(name, surname, work, absentdays)
+    Public Sub New(ByVal name As String, ByVal work As Integer, ByVal absentdays As Integer, ByVal mark As Integer, ByVal taskscompleted As Integer)
+        MyBase.New(name, work, absentdays)
         _mark = mark
         _taskscompleted = taskscompleted
     End Sub
@@ -56,14 +56,6 @@ Public Class Learner
         End Set
     End Property
 
-    Public Property Surname As String
-        Get
-            Return _Surname
-        End Get
-        Set(value As String)
-            _Surname = value
-        End Set
-    End Property
 
     Public Overrides Function WorkDone() As Double
         Return (_taskscompleted / _work) * 100   'Calculates the percentage of the work done by a learner

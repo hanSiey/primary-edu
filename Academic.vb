@@ -15,14 +15,12 @@ Public Class Academic
     Protected Shared _SchoolDays As Integer 'total school days in a year
     Protected _AbsentDays As Integer
     Protected _Name As String
-    Protected _Surname As String
     Protected _work As Integer
 
-    Public Sub New(ByVal name As String, ByVal surname As String, ByVal work As Integer, ByVal absentdays As Integer)
+    Public Sub New(ByVal name As String, ByVal work As Integer, ByVal absentdays As Integer)
         _SchoolDays = 200
         _AbsentDays = absentdays
         _Name = name
-        _Surname = surname
         _work = work
 
     End Sub

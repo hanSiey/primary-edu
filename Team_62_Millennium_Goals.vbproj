@@ -103,6 +103,7 @@
     </Compile>
     <Compile Include="PrimarySchool.vb" />
     <Compile Include="Teacher.vb" />
+    <Compile Include="UJGrid\UJGrid.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">

@@ -21,8 +21,10 @@ Public Class PrimarySchool
     Private _nTeachers As Integer
     Private _TotMember As Integer
 
+    Private _TaskToDo As Integer
 
-    Public Sub New(ByVal name As String, ByVal number_of_students As Integer, ByVal number_of_teachers As Integer, ByVal working_hours As Integer)
+
+    Public Sub New(ByVal name As String, ByVal number_of_students As Integer, ByVal number_of_teachers As Integer, ByVal working_hours As Integer, ByVal tasks_to_do As Integer)
         _Name = name
         ReDim _Members(number_of_students + number_of_teachers) 'resize to the total number of both learners and teachers
         _WorkingHours = working_hours
@@ -30,6 +32,8 @@ Public Class PrimarySchool
         _nStudents = number_of_students
         _nTeachers = number_of_teachers
         _TotMember = _nStudents + _nTeachers
+
+        _TaskToDo = tasks_to_do
 
     End Sub
 
@@ -51,7 +55,25 @@ Public Class PrimarySchool
         End Set
     End Property
 
-    Public Function DetermineStatus(ByVal mark As Integer) As String
+    Public Property tasks As Integer
+        Get
+            Return _TaskToDo
+        End Get
+        Set(value As Integer)
+            _TaskToDo = value
+        End Set
+    End Property
+
+    Public Property teaching_hours As Integer
+        Get
+            Return _WorkingHours
+        End Get
+        Set(value As Integer)
+            _WorkingHours = value
+        End Set
+    End Property
+
+    Public Function DetermineStatus(ByVal mark As Double) As String
         'Determines the state of the school
         Dim status As String = "None"
         Select Case mark
@@ -81,7 +103,7 @@ Public Class PrimarySchool
         Return TotalMarks / _nStudents 'Calculates the average pass mark
     End Function
 
-    Public Function CalculateWorkDone() As Double
+    Public Function CalcWorkDone() As Double
         'Determines the total work done by both teachers and learners in the school as a percentage
         Dim TotalWorkDone As Double = 0
         For m As Integer = 0 To _TotMember - 1
